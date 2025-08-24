@@ -11,9 +11,10 @@ export default function About() {
     
     <div className="">
 
-      <h3 className="text-3xl font-bold mb-4">Our Heritage Farm Story</h3>
+      <h3 className="text-3xl font-bold">Our Heritage Farm Story</h3>
       {/* <div className="w-24 h-1 bg-amber-500 mb-6"></div> */}
-      <p className="mb-2 max-w-xl">
+      <div className="w-32 h-1 bg-amber-500 my-2"></div>
+      <p className="my-4 max-w-xl">
         For over 15 years, Heritage Hens has been dedicated to preserving and promoting heritage chicken breeds. What started as a small family passion has grown into a mission to provide families across the country with the highest quality chickens.</p>
       <p className="mb-2  max-w-xl">
         We believe in raising chickens the way nature intended - with space to roam, healthy feed, and gentle care. Our breeding program focuses on health, temperament, and productivity, resulting in birds that will thrive in your backyard or homestead.
