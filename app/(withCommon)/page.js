@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Contact from "./components/Contact";
 import { Faq } from "./components/Faq";
 import Featured from "./components/Featured";
 import HeroSection from "./components/HeroSection";
@@ -18,6 +19,8 @@ export default function Home() {
     <Reviews/>
 
     <Faq/>
+
+    <Contact/>
 
     </>
 
