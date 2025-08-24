@@ -4,7 +4,6 @@ import  reviews  from "../data/reviews";
 
 export default function Reviews() {
 
-    console.log("Reviews:", reviews);
 
     return (
         <div className="py-12 bg-[#d97706]">  

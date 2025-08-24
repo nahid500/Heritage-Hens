@@ -9,11 +9,11 @@ export default function About() {
 
         <Image src="/hero.jpg" alt="about-us" width={450} height={450} className=" mx-auto pt-8 rounded-lg"/>
     
-    <div className="">
+    <div className="px-4">
 
-      <h3 className="text-3xl font-bold">Our Heritage Farm Story</h3>
+      <h3 className="text-2xl md:text-4xl text-center md:text-start font-bold pt-6">Our Heritage Farm Story</h3>
       {/* <div className="w-24 h-1 bg-amber-500 mb-6"></div> */}
-      <div className="w-32 h-1 bg-amber-500 my-2"></div>
+      <div className="w-32 h-1 bg-amber-500 my-2 mx-auto md:mx-0"></div>
       <p className="my-4 max-w-xl">
         For over 15 years, Heritage Hens has been dedicated to preserving and promoting heritage chicken breeds. What started as a small family passion has grown into a mission to provide families across the country with the highest quality chickens.</p>
       <p className="mb-2  max-w-xl">
@@ -42,7 +42,7 @@ export default function About() {
         </li> */}
       </ul> 
 
-      <button className="bg-[#d97706] hover:bg-[#dd8f36] text-white py-2 px-4 rounded-lg mt-4">Get in Touch</button>
+      <button className="bg-[#d97706] hover:bg-[#dd8f36] text-white justify-between py-2 px-4 rounded-lg mt-4">Get in Touch</button>
 
         </div>
     </div>

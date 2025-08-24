@@ -17,7 +17,7 @@ export function ReviewCarousel({reviews}) {
   return (
     <Carousel
       plugins={[plugin.current]} // Pass plugin to Carousel
-      className="w-full max-w-3xl mx-auto"
+      className="w-full max-w-xs md:max-w-3xl mx-auto"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
@@ -25,9 +25,9 @@ export function ReviewCarousel({reviews}) {
         {reviews && reviews.map((review, index) => (
           <CarouselItem key={index}>
 
-            <div className="p-12 bg-white rounded shadow flex">
+            <div className="p-6 md:p-12 bg-white rounded shadow grid grid-cols-1 md:grid-cols-2">
 
-              <Image src={review.img} alt="Review Image" width={150} height={200} className=" mb-4 rounded-full"/>
+              <Image src={review.img} alt="Review Image" width={150} height={200} className=" mx-auto mb-4 rounded-full"/>
 
               <div className="justify-items-start ml-6">
 
@@ -44,8 +44,8 @@ export function ReviewCarousel({reviews}) {
 
       </CarouselContent>
 
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="hidden md:flex" />
+      <CarouselNext className="hidden md:flex"  />
     </Carousel>
   )
 }

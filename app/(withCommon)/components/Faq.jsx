@@ -12,8 +12,8 @@ import {
 export function Faq() {
     return(
 
-        <div className="text-center my-12">
-            <h3 className=" text-4xl font-bold">Chicken Care Guide</h3>
+        <div className="text-center my-12 px-4">
+            <h3 className=" text-2xl md:text-4xl font-bold">Chicken Care Guide</h3>
             <div className="w-32 h-1 bg-amber-500 my-2 mx-auto"></div>
             <p className="max-w-3xl text-gray-600 text-center mx-auto py-4">New to raising chickens? We've put together some helpful information to ensure your new flock thrives. Our comprehensive care guide covers the basics and beyond.</p>
 
