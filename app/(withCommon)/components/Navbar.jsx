@@ -16,10 +16,10 @@ return (
         </Link>
 
         <div className="">
-            <Link href='/' className="text-[#d97706] text-lg hover:text-gray-200 px-6">Home</Link>
-            <Link href='/about' className="text-[#d97706] text-lg hover:text-gray-200 px-6">About    </Link>
-            <Link href='/products' className="text-[#d97706] text-lg hover:text-gray-200 px-6">Products</Link>
-            <Link href='/contact' className="text-[#d97706] text-lg hover:text-gray-200 px-6">Contact    </Link>
+            <Link href='/' className="text-[#d97706] text-md hover:text-[#a85f0c] px-6">Home</Link>
+            <Link href='/about' className="text-[#d97706] text-md hover:text-[#a85f0c] px-6">About    </Link>
+            <Link href='/products' className="text-[#d97706] text-md hover:text-[#a85f0c] px-6">Products</Link>
+            <Link href='/contact' className="text-[#d97706] text-md hover:text-[#a85f0c] px-6">Contact    </Link>
         </div>
 
         <div>
