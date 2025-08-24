@@ -5,9 +5,15 @@ import Image from "next/image";
 export default function HeroSection() {
     return (
 
-        <div>
+        <div className="relative min-h-screen flex items-center pt-16 bg-cover bg-center"
+      style={{ 
+        backgroundImage: 'url(https://images.pexels.com/photos/2255459/pexels-photo-2255459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)',
+        backgroundBlendMode: 'overlay',
+        backgroundColor: 'rgba(0, 0, 0, 0.4)'
+      }}>
 
-            <Image src='/hero.jpg' alt='Hero Image' width={1920} height={600} className=" relative w-full min-h-screen md:max-h-screen object-fill"/>
+            {/* <Image src='/hero.jpg' alt='Hero Image' width={1920} height={600} className=" relative w-full min-h-screen md:max-h-screen object-fill"/> */}
+
 
             <div className="absolute bottom-1 md:top-1/2 px-4 md:pl-12 text-white">
 
