@@ -1,8 +1,11 @@
 "use client"
+import { useRouter } from "next/navigation"
 import { toast} from "react-toastify"
 
 
 export default function BreedsCard({breed}){
+
+    const router = useRouter()
 
     
     return(
@@ -32,7 +35,7 @@ export default function BreedsCard({breed}){
                 <p className=" px-4">{breed.desc}</p>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 my-4">
-                    <button onClick={() => toast.success("Item viewed!")} className="bg-white border-2 border-[#d97706] text-[#d97706] py-2 px-4 mx-4 my-2 rounded hover:bg-slate-200 transition-colors">
+                    <button onClick={() => router.push(`/products/${breed.id}`)} className="bg-white border-2 border-[#d97706] text-[#d97706] py-2 px-4 mx-4 my-2 rounded hover:bg-slate-200 transition-colors">
                         View Details
                     </button>
                     
