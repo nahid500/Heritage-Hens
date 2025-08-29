@@ -23,8 +23,8 @@ export default function HeroSection() {
                 <p className="text-lg max-w-lg mt-4">Expertly raised, heritage breed chickens for sustainable egg production, ethical meat, and beautiful additions to your farm.</p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 mt-6 items-center gap-2">
-                    <button href ='/products' className="bg-[#d97706] hover:bg-[#b45309] hover:font-bold hover:-translate-y-2 py-3 rounded-lg">Explore our Breeds <span className="text-lg">&rarr;</span> </button>
-                    <button href ='/contact' className=" border-2 border-white hover:font-bold py-2 rounded-lg hover:-translate-y-2">Contact Us</button>
+                    <a href="/products" className="bg-[#d97706] hover:bg-[#b45309] hover:font-bold hover:-translate-y-2 py-3 text-center rounded-lg">Explore our Breeds <span className="text-lg">&rarr;</span> <button> </button></a>
+                    <a href ='/#contact' className=" border-2 border-white hover:font-bold py-2 rounded-lg text-center hover:-translate-y-2"> <button> Contact Us</button></a>
                 </div>
             </div>
         </div>

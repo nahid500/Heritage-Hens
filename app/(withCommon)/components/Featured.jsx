@@ -5,8 +5,6 @@ import BreedsCard from "./BreedsCard"
 export default function Featured(){
     return(
 
-        // const featuredProducts = breeds.filter.map
-
         <div className="my-12">
 
             <h2 className="text-center text-2xl md:text-4xl text-[#d97706] font-bold">Featured Heritage Breeds</h2>
@@ -15,7 +13,7 @@ export default function Featured(){
 
            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mx-28 gap-6">
             {breeds.filter(breed => breed.featured).map(breed => (
-                <BreedsCard key={breed.id} breed={breed} />
+                <BreedsCard key={breed._id} breed={breed} />
             ))}
 
            </div>

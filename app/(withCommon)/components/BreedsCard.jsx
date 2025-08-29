@@ -1,11 +1,13 @@
 "use client"
 import { useRouter } from "next/navigation"
 import { toast} from "react-toastify"
+import { useCartStore } from "../store/CartStore"
 
 
 export default function BreedsCard({breed}){
 
     const router = useRouter()
+const addToCart = useCartStore((state) => state.addToCart)
 
     
     return(
@@ -39,9 +41,16 @@ export default function BreedsCard({breed}){
                         View Details
                     </button>
                     
-                    <button onClick={() => toast.success("Item added to cart!")} className="bg-[#d97706] text-white py-2 px-4 mx-4 my-2 rounded hover:bg-[#b45309] transition-colors">
-                        Add to Cart 
-                    </button>
+                    <button
+  onClick={() => {
+    addToCart(breed)          // Add product to cart
+    toast.success("Item added to cart!")
+  }}
+  className="bg-[#d97706] text-white py-2 px-4 mx-4 my-2 rounded hover:bg-[#b45309] transition-colors"
+>
+  Add to Cart
+</button>
+
                 </div>
                 
             </div>

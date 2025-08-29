@@ -1,6 +1,6 @@
 const breeds = [
     {
-        id: 1,
+        _id: "64f7b1b97f1234567890abcd",
         name: "Rhode Island Red",
         desc:"A hardy, versatile breed known for excellent egg production and friendly disposition.",
         price: 260,
@@ -12,7 +12,7 @@ const breeds = [
         featured: true
     },
     {
-        id: 2,
+        _id: 2,
         name: "Plymouth Rock",
         desc:"A dual-purpose breed valued for both meat and egg production, with a docile temperament.",
         price: 220,
@@ -25,7 +25,7 @@ const breeds = [
 
     },
     {
-        id: 3,
+        __id: 3,
         name: "Sussex",
         desc:"A friendly and curious breed known for good egg-laying abilities and adaptability.",
         price: 240,
@@ -37,7 +37,7 @@ const breeds = [
         featured: true,
     },
     {
-        id: 4,
+        __id: 4,
         name: "Orpington",
         desc:"A large, gentle breed prized for its excellent meat quality and good egg production.",
         price: 280,
@@ -49,7 +49,7 @@ const breeds = [
         featured: false,
     },
     {
-        id: 5,
+        __id: 5,
         name: "Wyandotte",
         desc:"A beautiful, hardy breed known for its attractive plumage and reliable egg-laying.",
         price: 230,
@@ -61,7 +61,7 @@ const breeds = [
         featured: false,
     },
     {
-        id: 6,
+        __id: 6,
         name: "Australorp",
         desc:"An Australian breed renowned for its exceptional egg production and calm demeanor.",
         price: 270,
@@ -73,7 +73,7 @@ const breeds = [
         featured: false,
     },
     {
-        id: 7,
+        __id: 7,
         name: "Cochin",
         desc:"A fluffy, ornamental breed well-known for its gentle nature and brooding instincts.",
         price: 300,
@@ -85,7 +85,7 @@ const breeds = [
         featured: false,
     },
     {
-        id: 8,
+        __id: 8,
         name: "Marans",
         desc:"A French breed famous for its dark chocolate-colored eggs and robust build.",
         price: 250,
