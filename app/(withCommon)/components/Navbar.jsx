@@ -30,7 +30,7 @@ return (
             <Link href='/#about' className="text-[#d97706] text-md hover:text-[#a85f0c] px-6">About    </Link>
             <Link href='/products' className="text-[#d97706] text-md hover:text-[#a85f0c] px-6">Products</Link>
             <Link href='/order' className="text-[#d97706] text-md hover:text-[#a85f0c] px-6">Cart/Order</Link>
-            <Link href='/#contact' className="text-[#d97706] text-md hover:text-[#a85f0c] px-6">Contact    </Link>
+            <Link href='/login' className="text-[#d97706] text-md hover:text-[#a85f0c] px-6">Login    </Link>
         </div>
 
         <div>
