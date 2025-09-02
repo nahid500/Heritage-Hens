@@ -2,12 +2,14 @@
 import { useRouter } from "next/navigation"
 import { toast} from "react-toastify"
 import { useCartStore } from "../store/CartStore"
+import Image from "next/image"
+import AddToCartButton from "./AddToCartButton"
 
 
 export default function BreedsCard({breed}){
 
     const router = useRouter()
-const addToCart = useCartStore((state) => state.addToCart)
+// const addToCart = useCartStore((state) => state.addToCart)
 
     
     return(
@@ -23,7 +25,7 @@ const addToCart = useCartStore((state) => state.addToCart)
                 )}
                 </div>
 
-                <img className="rounded-t-lg w-full h-48 object-cover" src={breed.img} alt="Card image" />
+                <Image src={breed.imgUrls?.[0]} alt="Card image" width={400} height={192} priority className="rounded-t-lg object-cover"/>
 
                
                 
@@ -37,19 +39,22 @@ const addToCart = useCartStore((state) => state.addToCart)
                 <p className=" px-4">{breed.desc}</p>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 my-4">
-                    <button onClick={() => router.push(`/products/${breed.id}`)} className="bg-white border-2 border-[#d97706] text-[#d97706] py-2 px-4 mx-4 my-2 rounded hover:bg-slate-200 transition-colors">
+                    <button onClick={() => router.push(`/products/${breed._id}`)} className="bg-white border-2 border-[#d97706] text-[#d97706] py-2 px-4 mx-4 my-2 rounded hover:bg-slate-200 transition-colors">
                         View Details
                     </button>
                     
-                    <button
-  onClick={() => {
-    addToCart(breed)          // Add product to cart
-    toast.success("Item added to cart!")
-  }}
-  className="bg-[#d97706] text-white py-2 px-4 mx-4 my-2 rounded hover:bg-[#b45309] transition-colors"
->
-  Add to Cart
-</button>
+
+                    <AddToCartButton product={breed}/>
+
+                    {/* <button
+                        onClick={() => {
+                            addToCart(breed)          // Add product to cart
+                            toast.success("Item added to cart!")
+                        }}
+                        className="bg-[#d97706] text-white py-2 px-4 mx-4 my-2 rounded hover:bg-[#b45309] transition-colors"
+                        >
+                        Add to Cart
+                        </button> */}
 
                 </div>
                 

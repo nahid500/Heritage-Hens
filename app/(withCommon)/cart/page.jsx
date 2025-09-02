@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useCartStore } from "../store/CartStore";
 import { loadStripe } from "@stripe/stripe-js";
 import { useAuthStore } from "../store/useAuthStore";
+import Router from "next/router";
 
 // ✅ Stripe singleton
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
@@ -90,12 +91,16 @@ export default function OrderPage() {
 
       {error && <p className="text-red-600 mt-4">{error}</p>}
 
-      <button
+      {/* <button
         disabled={loading}
         onClick={handleCheckout}
         className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-6 mt-6 rounded"
       >
         {loading ? "Redirecting to Stripe..." : "Pay Now"}
+      </button> */}
+
+      <button onClick={()=> (router.push('/order'))} className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-6 mt-6 rounded">
+        Proceed to Checkout
       </button>
     </div>
   );

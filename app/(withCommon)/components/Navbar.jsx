@@ -29,7 +29,8 @@ return (
             <Link href='/' className="text-[#d97706] text-md hover:text-[#a85f0c] px-6">Home</Link>
             <Link href='/#about' className="text-[#d97706] text-md hover:text-[#a85f0c] px-6">About    </Link>
             <Link href='/products' className="text-[#d97706] text-md hover:text-[#a85f0c] px-6">Products</Link>
-            <Link href='/order' className="text-[#d97706] text-md hover:text-[#a85f0c] px-6">Cart/Order</Link>
+            <Link href='/cart' className="text-[#d97706] text-md hover:text-[#a85f0c] px-6">Cart</Link>
+            <Link href='/order' className="text-[#d97706] text-md hover:text-[#a85f0c] px-6">Order</Link>
             <Link href='/login' className="text-[#d97706] text-md hover:text-[#a85f0c] px-6">Login    </Link>
         </div>
 
